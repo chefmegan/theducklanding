@@ -1,0 +1,140 @@
+
+// wait for vue js 2 to load before rendering content
+
+[v-cloak] {
+  display: none;
+}
+
+// Navbar variables
+$navbar-background-color: rgba(245, 245, 245, 0.8);
+// items
+$navbar-item-color: $primary-invert;
+
+$navbar-item-hover-color: $primary;
+$navbar-item-hover-background-color: $primary-invert;
+
+$navbar-item-active-color: $primary;
+$navbar-item-active-background-color: $primary-invert;
+
+.navbar-burger {
+  color: $primary-invert;
+}
+
+// font family for 'Chef Megan' landing
+
+.is-cursive {
+  font-family: $family-cursive;
+  color: $primary;
+  text-shadow: 1px 1px 1px #fff, 1px 1px 1px rgba(0,0,0,0.15);
+}
+
+// home section on landing page
+
+.hero.is-home {
+  background-image: url("https://i.imgur.com/O7QQExW.jpg"); //home image
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  color: #fff;
+}
+
+.hero.is-home .title {
+  color: #fff;
+}
+
+.hero.is-home .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+// events section on landing page
+
+.hero.is-events {
+  background-image: none; //home image
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  color: #fff;
+}
+
+.hero.is-events .title {
+  color: #fff;
+}
+
+.hero.is-events .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+// about section on landing page
+
+.hero.is-about {
+   background-image: url("https://i.imgur.com/UeAAZuC.jpg"); //about image
+   background-repeat:no-repeat;
+   background-position:center;
+   background-size:cover;
+   color: #fff;
+   background-attachment: fixed;  // this line gives the effect of a cutout moving over a stationary image when scrolling
+   background-color: hsla(0,0%,100%,0); // set opacity with the final value currently at 60%
+   background-blend-mode: overlay;
+   background-repeat: no-repeat;
+}
+
+// testimonials section on landing page
+
+.hero.is-testimonials {
+  background-image: none;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  color: #fff;
+}
+
+.hero.is-testimonials .title {
+  color: #fff;
+}
+
+.hero.is-testimonials .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+// contact section on landing page
+
+.hero.is-contact {
+//  background-image: url("https://i.imgur.com/cunhXsI.jpg"); //contact us image
+//  background-repeat:no-repeat;
+//  background-position:center;
+//  background-size:cover;
+//  color: #fff;
+}
+
+// footer css
+
+.hero.is-landingfooter {
+    background-color: $primary-invert;
+    font-color: $primary;
+}
+
+// gallery
+
+.zoom:hover {
+    transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+// bounce
+
+.bounce-enter-active {
+  animation: bounce-in 1s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
