@@ -113,7 +113,7 @@ Chef Megan
                 <article class="message is-primary">
                     <div class="message-body">
                         <p class="content has-text-left">
-                            "Megan made us a 3-tier wedding cake for 100 people and it was stunning. Each layer was a different flavour; salted caramel, chocolate oreo and carrot cake - they were so tasty! The flavours, texture and decoration were excellent, down to the beautifully sculpted fondant elephants that fit perfectly with our wedding theme. I cannot recommend highly enough."
+                            "Megan made us a 3-tier wedding cake for 100 people and it was stunning. Each layer was a different flavour; salted caramel, chocolate oreo and carrot cake - they were so tasty! The flavours, texture and decoration were excellent, down to the beautifully sculpted fondant elephants that fit perfectly with our wedding theme. I cannot recommend highly enough!"
                         </p>
                         <p class="content has-text-right">
                             <strong>Sunita Yardley-Patel - Bride from Wolverhampton</strong>
