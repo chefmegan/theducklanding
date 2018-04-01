@@ -47367,6 +47367,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -47381,6 +47385,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     toggleMenu: function toggleMenu() {
       this.isActive = !this.isActive;
+    },
+
+    closeMenu: function closeMenu() {
+      this.isActive = false;
     }
 
   }
@@ -47511,83 +47519,88 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c(
-      "section",
-      { staticClass: "hero is-home is-fullheight", attrs: { id: "home" } },
-      [
-        _c("div", { staticClass: "hero-body" }, [
-          _c("div", { staticClass: "container" }, [_vm._t("home")], 2)
-        ]),
-        _vm._v(" "),
-        _c("nav", { staticClass: "level" }, [
-          _c("div", { staticClass: "level-item has-text-centered" }, [
-            _c("i", {
-              directives: [
-                {
-                  name: "scroll-to",
-                  rawName: "v-scroll-to",
-                  value: "#events",
-                  expression: "'#events'"
-                }
-              ],
-              staticClass: "fa fa-chevron-circle-down fa-5x is-inverted",
-              staticStyle: { color: "rgb(149, 64, 79)" },
-              attrs: { "aria-hidden": "true" }
-            })
+    _c("div", { on: { click: _vm.closeMenu } }, [
+      _c(
+        "section",
+        { staticClass: "hero is-home is-fullheight", attrs: { id: "home" } },
+        [
+          _c("div", { staticClass: "hero-body" }, [
+            _c("div", { staticClass: "container" }, [_vm._t("home")], 2)
+          ]),
+          _vm._v(" "),
+          _c("nav", { staticClass: "level" }, [
+            _c("div", { staticClass: "level-item has-text-centered" }, [
+              _c("i", {
+                directives: [
+                  {
+                    name: "scroll-to",
+                    rawName: "v-scroll-to",
+                    value: "#events",
+                    expression: "'#events'"
+                  }
+                ],
+                staticClass: "fa fa-chevron-circle-down fa-5x is-inverted",
+                staticStyle: { color: "rgb(149, 64, 79)" },
+                attrs: { "aria-hidden": "true" }
+              })
+            ])
           ])
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c(
-      "section",
-      { staticClass: "hero is-events is-fullheight", attrs: { id: "events" } },
-      [
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "section",
+        {
+          staticClass: "hero is-events is-fullheight",
+          attrs: { id: "events" }
+        },
+        [
+          _c("div", { staticClass: "hero-body" }, [
+            _c("div", { staticClass: "container" }, [_vm._t("events")], 2)
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "section",
+        { staticClass: "hero is-about is-fullheight", attrs: { id: "about" } },
+        [
+          _c("div", { staticClass: "hero-body" }, [
+            _c("div", { staticClass: "container" }, [_vm._t("about")], 2)
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "section",
+        {
+          staticClass: "hero is-testimonials is-fullheight",
+          attrs: { id: "testimonials" }
+        },
+        [
+          _c("div", { staticClass: "hero-body" }, [
+            _c("div", { staticClass: "container" }, [_vm._t("testimonials")], 2)
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "section",
+        {
+          staticClass: "hero is-contact is-fullheight",
+          attrs: { id: "contact" }
+        },
+        [
+          _c("div", { staticClass: "hero-body" }, [
+            _c("div", { staticClass: "container" }, [_vm._t("contact")], 2)
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("section", { staticClass: "hero is-landingfooter" }, [
         _c("div", { staticClass: "hero-body" }, [
-          _c("div", { staticClass: "container" }, [_vm._t("events")], 2)
+          _c("div", { staticClass: "container" }, [_vm._t("footer")], 2)
         ])
-      ]
-    ),
-    _vm._v(" "),
-    _c(
-      "section",
-      { staticClass: "hero is-about is-fullheight", attrs: { id: "about" } },
-      [
-        _c("div", { staticClass: "hero-body" }, [
-          _c("div", { staticClass: "container" }, [_vm._t("about")], 2)
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c(
-      "section",
-      {
-        staticClass: "hero is-testimonials is-fullheight",
-        attrs: { id: "testimonials" }
-      },
-      [
-        _c("div", { staticClass: "hero-body" }, [
-          _c("div", { staticClass: "container" }, [_vm._t("testimonials")], 2)
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c(
-      "section",
-      {
-        staticClass: "hero is-contact is-fullheight",
-        attrs: { id: "contact" }
-      },
-      [
-        _c("div", { staticClass: "hero-body" }, [
-          _c("div", { staticClass: "container" }, [_vm._t("contact")], 2)
-        ])
-      ]
-    ),
-    _vm._v(" "),
-    _c("section", { staticClass: "hero is-landingfooter" }, [
-      _c("div", { staticClass: "hero-body" }, [
-        _c("div", { staticClass: "container" }, [_vm._t("footer")], 2)
       ])
     ])
   ])

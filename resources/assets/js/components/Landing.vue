@@ -29,6 +29,8 @@
       </div>
     </nav>
 
+    <div @click="closeMenu">
+
     <section class="hero is-home is-fullheight" id="home">
     <div class="hero-body">
       <div class="container">
@@ -94,6 +96,8 @@
 
   </div>
 
+</div>
+
 </template>
 
 <script>
@@ -110,6 +114,10 @@ export default {
 
     toggleMenu: function() {
       this.isActive = !this.isActive;
+    },
+
+    closeMenu: function() {
+      this.isActive = false;
     },
 
   }
